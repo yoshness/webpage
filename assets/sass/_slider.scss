@@ -1,0 +1,60 @@
+.slider {
+    margin-bottom: $medium-margin-padding;
+    position: relative;
+
+    &__gallery {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    &__image-container {
+        white-space: nowrap;
+        position: relative;
+        top: 0;
+        left: -$slider-image-width;
+        margin: 0; 
+        padding: 0;
+    }
+
+    &__image-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        width: $slider-image-width;
+        height: 418px;
+        white-space: normal;
+        padding: 0;
+    }
+
+    &__btn-trigger {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    &__btn-prev-next {
+        top: 45%;
+    }
+
+    &__btn-prev-next--previous {
+        left: 8%;
+    }
+
+    &__btn-prev-next--next {
+        right: 8%;
+    }
+
+    &__btn-pager {
+        top: 90%;
+    }
+
+    &__btn-pager--one { 
+        left: 46%;
+    }
+
+    &__btn-pager--two { 
+        left: 49%;
+    }
+
+    &__btn-pager--three { 
+        left: 52%;
+    }
+}

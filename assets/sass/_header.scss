@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lucida Calligraphy';
+    src: url('../fonts/Lucida Calligraphy Italic.ttf');
+}
+
+.site-header {
+    font-family: "Lucida Calligraphy", sans-serif;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid $hover-color;
+
+    &__heading {
+        margin: 0;
+        font-size: 3.0em;
+        letter-spacing: 2px;
+    }
+}

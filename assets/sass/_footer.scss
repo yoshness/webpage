@@ -1,0 +1,34 @@
+.site-footer {
+    clear: both;
+
+    &__btn-container {
+        padding: 1em 8.4em;
+        text-align: right;
+        
+    }
+
+    &__btn-pagetop {
+        cursor: pointer;
+        margin: 0;
+    }
+
+    &__nav {
+        padding: 1em 8.4em;
+        color: #fff;
+        background-color: #000;
+    }
+
+    &__left-text {
+        padding-right: $medium-margin-padding;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    &__right-text {
+        float: right;
+    }
+}
