@@ -12,7 +12,7 @@ aside, nav, article, figure {
 
 @font-face {
   font-family: 'Lucida Calligraphy';
-  src: url("../fonts/Lucida Calligraphy Italic.ttf"); }
+  src: url("../fonts/Lucida_Calligraphy_Italic.ttf"); }
 
 .site-header {
   font-family: "Lucida Calligraphy", sans-serif;
@@ -26,41 +26,34 @@ aside, nav, article, figure {
 
 .slider {
   margin-bottom: 20px;
-  position: relative; }
+  overflow: hidden; }
   .slider__gallery {
-    margin: 0;
-    overflow: hidden; }
-  .slider__image-container {
-    white-space: nowrap;
     position: relative;
-    top: 0;
-    left: -1400px;
+    width: 400%;
     margin: 0;
-    padding: 0; }
-  .slider__image-wrapper {
-    display: inline-block;
-    vertical-align: top;
-    width: 1400px;
-    height: 418px;
-    white-space: normal;
-    padding: 0; }
+    left: -100%;
+    text-align: left;
+    font-size: 0; }
+  .slider__gallery-image {
+    width: 25%;
+    float: left; }
   .slider__btn-trigger {
     position: absolute;
     cursor: pointer; }
   .slider__btn-prev-next {
-    top: 45%; }
+    margin-top: 12%; }
   .slider__btn-prev-next--previous {
-    left: 8%; }
+    left: 10%; }
   .slider__btn-prev-next--next {
-    right: 8%; }
+    right: 10%; }
   .slider__btn-pager {
-    top: 90%; }
+    margin-top: 25%; }
   .slider__btn-pager--one {
-    left: 46%; }
+    left: 47%; }
   .slider__btn-pager--two {
     left: 49%; }
   .slider__btn-pager--three {
-    left: 52%; }
+    left: 51%; }
 
 .content {
   margin: 0 auto;
@@ -93,6 +86,7 @@ aside, nav, article, figure {
     font-size: 14px;
     line-height: 1.3em; }
   .content__article-date {
+    display: block;
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.3em;
@@ -102,6 +96,7 @@ aside, nav, article, figure {
     margin: 60px auto 40px 0;
     text-align: center; }
   .content__more-articles-btn {
+    position: relative;
     cursor: pointer;
     padding: 8px 185px;
     font-size: 20px;
@@ -109,8 +104,8 @@ aside, nav, article, figure {
     background-color: #333;
     border-width: 0; }
   .content__more-articles-arrow {
-    position: relative;
-    top: 55%;
+    position: absolute;
+    top: 35%;
     right: 5%;
     width: 8px; }
 
@@ -144,6 +139,7 @@ aside, nav, article, figure {
     .sidebar__recommended-article-title:hover {
       color: #E7B92F; }
   .sidebar__recommended-article-date {
+    display: block;
     margin: 0 auto;
     line-height: 1.3em;
     font-size: 11px;

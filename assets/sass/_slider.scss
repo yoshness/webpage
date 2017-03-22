@@ -1,28 +1,19 @@
 .slider {
     margin-bottom: $medium-margin-padding;
-    position: relative;
+    overflow: hidden;
 
     &__gallery {
-        margin: 0;
-        overflow: hidden;
-    }
-
-    &__image-container {
-        white-space: nowrap;
         position: relative;
-        top: 0;
-        left: -$slider-image-width;
-        margin: 0; 
-        padding: 0;
+        width: 400%;
+        margin: 0;
+        left: -100%;
+        text-align: left;
+        font-size: 0;
     }
 
-    &__image-wrapper {
-        display: inline-block;
-        vertical-align: top;
-        width: $slider-image-width;
-        height: 418px;
-        white-space: normal;
-        padding: 0;
+    &__gallery-image {
+        width: 25%; 
+        float: left;
     }
 
     &__btn-trigger {
@@ -31,23 +22,23 @@
     }
 
     &__btn-prev-next {
-        top: 45%;
+        margin-top: 12%;
     }
 
     &__btn-prev-next--previous {
-        left: 8%;
+        left: 10%;
     }
 
     &__btn-prev-next--next {
-        right: 8%;
+        right: 10%;
     }
 
     &__btn-pager {
-        top: 90%;
+        margin-top: 25%;
     }
 
     &__btn-pager--one { 
-        left: 46%;
+        left: 47%;
     }
 
     &__btn-pager--two { 
@@ -55,6 +46,6 @@
     }
 
     &__btn-pager--three { 
-        left: 52%;
+        left: 51%;
     }
 }

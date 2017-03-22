@@ -1,18 +1,17 @@
 $(document).ready(function() {
-    var gallery     = $('#gallery ul'),
-        pics        = gallery.find('li'),
+    var gallery     = $('#gallery'),
+        pics        = gallery.find('.slider__gallery-image'),
         first_pic   = pics.filter(':first'),
         last_pic    = pics.filter(':last'),
         curr_index  = 1,
-        pic_width = 1404; // 1400px + 4px as a slight adjustment
+        pic_width = 25; // width of .slider__gallery-image
 
-    // initialize 1st pager as active
+    // initialize 1st pager as active and hide previous button
     $('#pager-' + curr_index).attr('src', 'assets/images/hover-pager.png');
+    $('#previous').hide();
       
-    // clone 1st pic and append after last pic
     // clone last pic and append before 1st pic
-    first_pic.before(last_pic.clone(true)); 
-    last_pic.after(first_pic.clone(true)); 
+    first_pic.before(last_pic.clone(true));  
       
     $('.slider__btn-trigger').on('click', function() {
 
@@ -31,46 +30,52 @@ $(document).ready(function() {
 
             switch(btn_id) {
                 case 'previous':
-                    multiplier = -1;
+                    multiplier = -4;
+                    curr_index -= 1;
                     break;
                 case 'next':
-                    multiplier = 1;
+                    multiplier = 4;
+                    curr_index += 1;
                     break;  
                 case 'pager-2':
-                    multiplier = 2;
+                    multiplier = 8;
+                    curr_index = 2;
                     break;  
                 case 'pager-3':
-                    multiplier = 3;
+                    multiplier = 12;
+                    curr_index = 3;
                     break;
                 default:
-                    multiplier = 1;
+                    multiplier = 4;
+                    curr_index = 1;
                     break;                  
             }
 
             // if pager is clicked, reset slider before moving to the chosen slide
             if(btn.hasClass('slider__btn-pager')) {
-                gallery.css({left: 0 });
-                curr_index = multiplier;
+                gallery.css({ left: 0 + '%' });
             }
 
-            gallery.animate({ left: '+=' + (-pic_width * multiplier) }, function() {
-          
-                // if previous or next is clicked, add/subtract 1 to index
-                if(btn.hasClass('slider__btn-prev-next')) {
-                    curr_index += multiplier;  
-                }
-                
-                trigger_loop = (curr_index === 0 || curr_index > pics.length);
-
-                if (trigger_loop) {
-                    // move from 1st pic to cloned last pic or last pic to cloned 1st pic
-                    curr_index = (curr_index === 0) ? pics.length : 1; 
-                    gallery.css({left:  -pic_width * curr_index });
-                }
+            gallery.animate({ left: '+=' + (-pic_width * multiplier + '%') }, function() {
 
                 // change active pager and set the other pagers to default color
                 $('#pager-' + curr_index).attr('src', 'assets/images/hover-pager.png');
                 $('.slider__btn-pager').not('#pager-' + curr_index).attr('src', 'assets/images/standard-pager.png');
+
+                // hide/show previous and next buttons depending on active image (curr_index)                
+                if(curr_index == 1) {
+                    $('#previous').hide();
+                    $('#next').show();
+                }
+                else if(curr_index == 3) {
+                    $('#previous').show();
+                    $('#next').hide();
+                }
+                else {
+                    $('#previous').show();
+                    $('#next').show();
+                }
+
             });   
         }
     });

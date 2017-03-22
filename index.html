@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Life is Good, Inc.</title>
     <link rel="stylesheet"  href="assets/compiled/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/Lucida Calligraphy Italic.ttf">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Lucida_Calligraphy_Italic.ttf">
     <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="assets/js/index.js"></script>
 </head>
@@ -15,16 +15,16 @@
     <main>
         <section class="slider">
             <figure id="gallery" class="slider__gallery">
-                <ul class="slider__image-container">
-                    <li class="slider__image-wrapper"><img src="assets/images/slide1.jpg" alt="Slider Image" class="slider__image"></li>
-                    <li class="slider__image-wrapper"><img src="assets/images/slide2.jpg" alt="Slider Image" class="slider__image"></li>
-                    <li class="slider__image-wrapper"><img src="assets/images/slide3.jpg" alt="Slider Image" class="slider__image"></li>
-                </ul>
-                <img src="assets/images/left-arrow.png" id="previous" class="slider__btn-trigger slider__btn-prev-next slider__btn-prev-next--previous">
-                <img src="assets/images/right-arrow.png" id="next" class="slider__btn-trigger slider__btn-prev-next slider__btn-prev-next--next">
-                <img src="assets/images/standard-pager.png" id="pager-1" class="slider__btn-trigger slider__btn-pager slider__btn-pager--one">
-                <img src="assets/images/standard-pager.png" id="pager-2" class="slider__btn-trigger slider__btn-pager slider__btn-pager--two">
-                <img src="assets/images/standard-pager.png" id="pager-3" class="slider__btn-trigger slider__btn-pager slider__btn-pager--three">
+                <img src="assets/images/slide1.jpg" alt="Slider Image" class="slider__gallery-image">
+                <img src="assets/images/slide2.jpg" alt="Slider Image" class="slider__gallery-image">
+                <img src="assets/images/slide3.jpg" alt="Slider Image" class="slider__gallery-image">
+            </figure>
+            <figure class="slider__controls">
+                <img src="assets/images/left-arrow.png" alt="Previous Image" id="previous" class="slider__btn-trigger slider__btn-prev-next slider__btn-prev-next--previous">
+                <img src="assets/images/right-arrow.png" alt="Next Image" id="next" class="slider__btn-trigger slider__btn-prev-next slider__btn-prev-next--next">
+                <img src="assets/images/standard-pager.png" alt="First Image" id="pager-1" class="slider__btn-trigger slider__btn-pager slider__btn-pager--one">
+                <img src="assets/images/standard-pager.png" alt="Second Image" id="pager-2" class="slider__btn-trigger slider__btn-pager slider__btn-pager--two">
+                <img src="assets/images/standard-pager.png" alt="Third Image" id="pager-3" class="slider__btn-trigger slider__btn-pager slider__btn-pager--three">
             </figure>
         </section>
         <section class="content">
@@ -32,7 +32,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -40,7 +40,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo-2.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -48,7 +48,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -56,7 +56,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -64,7 +64,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -72,7 +72,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -80,7 +80,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -88,7 +88,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -96,7 +96,7 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
@@ -104,15 +104,14 @@
                 <article class="content__articles-list-item">
                     <a href="https://iioffice.liginc.co.jp/cebu/">
                         <img src="assets/images/article-photo.jpg" alt="Post Image" class="content__article-image">
-                        <p class="content__article-date">2016.01.01</p>
+                        <time datetime="2016-01-01" class="content__article-date">2016.01.01</time>
                         <h2 class="content__article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h2>
                         <p class="content__article-preview">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト...</p>
                     </a>
                 </article>
                 <footer class="content__articles-footer">
-                    <a href="https://iioffice.liginc.co.jp/cebu/">
-                        <button class="content__more-articles-btn">More</button>
-                        <img src="assets/images/right-arrow.png" class="content__more-articles-arrow">
+                    <a href="https://iioffice.liginc.co.jp/cebu/" class="content__more-articles-btn">More
+                        <img src="assets/images/right-arrow.png" alt="More Articles Arrow" class="content__more-articles-arrow">
                     </a>
                 </footer>
             </section>
@@ -128,21 +127,21 @@
                         <a href="https://iioffice.liginc.co.jp/cebu/">
                             <img src="assets/images/article-photo.jpg" alt="Post Image" class="sidebar__recommended-article-image">
                             <h4 class="sidebar__recommended-article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h4>
-                            <p class="sidebar__recommended-article-date">2016.03.26</p>
+                            <time datetime="2016-03-26" class="sidebar__recommended-article-date">2016.03.26</time>
                         </a>
                     </article>
                     <article class="sidebar__recommended-article">
                         <a href="https://iioffice.liginc.co.jp/cebu/">
                             <img src="assets/images/article-photo.jpg" alt="Post Image" class="sidebar__recommended-article-image">
                             <h4 class="sidebar__recommended-article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h4>
-                            <p class="sidebar__recommended-article-date">2016.03.26</p>
+                            <time datetime="2016-03-26" class="sidebar__recommended-article-date">2016.03.26</time>
                         </a>
                     </article>
                     <article class="sidebar__recommended-article">
                         <a href="https://iioffice.liginc.co.jp/cebu/">
                             <img src="assets/images/article-photo.jpg" alt="Post Image" class="sidebar__recommended-article-image">
                             <h4 class="sidebar__recommended-article-title">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h4>
-                            <p class="sidebar__recommended-article-date">2016.03.26</p>
+                            <time datetime="2016-03-26" class="sidebar__recommended-article-date">2016.03.26</time>
                         </a>
                     </article>
                 </section>
