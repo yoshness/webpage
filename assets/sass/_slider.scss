@@ -1,4 +1,5 @@
 .slider {
+    position: relative;
     margin-bottom: $medium-margin-padding;
     overflow: hidden;
 
@@ -9,6 +10,24 @@
         left: -100%;
         text-align: left;
         font-size: 0;
+    }
+
+    &__image-text {
+        position: absolute;
+        color: #fff;
+    }
+
+    &__image-heading--main {
+        top: 14%;
+        left: 20%;
+        font-size: 4em;
+    }
+
+    &__image-heading--sub {
+        top: 51%;
+        left: 29%;
+        font-size: 1em;
+        letter-spacing: 0.1em;
     }
 
     &__gallery-image {
@@ -22,11 +41,12 @@
     }
 
     &__btn-prev-next {
-        margin-top: 12%;
+        top: 44%;
     }
 
     &__btn-prev-next--previous {
         left: 10%;
+        display: none;
     }
 
     &__btn-prev-next--next {
@@ -34,7 +54,7 @@
     }
 
     &__btn-pager {
-        margin-top: 25%;
+        top: 91%;
     }
 
     &__btn-pager--one { 

@@ -25,6 +25,7 @@ aside, nav, article, figure {
     letter-spacing: 2px; }
 
 .slider {
+  position: relative;
   margin-bottom: 20px;
   overflow: hidden; }
   .slider__gallery {
@@ -34,6 +35,18 @@ aside, nav, article, figure {
     left: -100%;
     text-align: left;
     font-size: 0; }
+  .slider__image-text {
+    position: absolute;
+    color: #fff; }
+  .slider__image-heading--main {
+    top: 14%;
+    left: 20%;
+    font-size: 4em; }
+  .slider__image-heading--sub {
+    top: 51%;
+    left: 29%;
+    font-size: 1em;
+    letter-spacing: 0.1em; }
   .slider__gallery-image {
     width: 25%;
     float: left; }
@@ -41,13 +54,14 @@ aside, nav, article, figure {
     position: absolute;
     cursor: pointer; }
   .slider__btn-prev-next {
-    margin-top: 12%; }
+    top: 44%; }
   .slider__btn-prev-next--previous {
-    left: 10%; }
+    left: 10%;
+    display: none; }
   .slider__btn-prev-next--next {
     right: 10%; }
   .slider__btn-pager {
-    margin-top: 25%; }
+    top: 91%; }
   .slider__btn-pager--one {
     left: 47%; }
   .slider__btn-pager--two {

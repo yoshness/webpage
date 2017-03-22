@@ -6,9 +6,8 @@ $(document).ready(function() {
         curr_index  = 1,
         pic_width = 25; // width of .slider__gallery-image
 
-    // initialize 1st pager as active and hide previous button
+    // initialize 1st pager as active
     $('#pager-' + curr_index).attr('src', 'assets/images/hover-pager.png');
-    $('#previous').hide();
       
     // clone last pic and append before 1st pic
     first_pic.before(last_pic.clone(true));  
@@ -25,7 +24,6 @@ $(document).ready(function() {
                 return false;
             }
 
-            var trigger_loop = false;
             var multiplier;       
 
             switch(btn_id) {
@@ -53,7 +51,7 @@ $(document).ready(function() {
 
             // if pager is clicked, reset slider before moving to the chosen slide
             if(btn.hasClass('slider__btn-pager')) {
-                gallery.css({ left: 0 + '%' });
+                gallery.css({ left: 0 });
             }
 
             gallery.animate({ left: '+=' + (-pic_width * multiplier + '%') }, function() {
