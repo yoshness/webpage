@@ -7,9 +7,6 @@ $(document).ready(function() {
     // initialize 1st pager as active
     $('#pager-' + curr_index).attr('src', 'assets/images/hover-pager.png');
       
-    // clone last pic and append before 1st pic
-    // first_pic.before(last_pic.clone(true));  
-      
     $('.slider__btn-trigger').on('click', function() {
 
         var btn = $(this);
