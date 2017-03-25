@@ -5,9 +5,9 @@
 
     &__gallery {
         position: relative;
-        width: 400%;
+        width: 300%;
         margin: 0;
-        left: -100%;
+        left: 0%;
         text-align: left;
         font-size: 0;
     }
@@ -31,7 +31,7 @@
     }
 
     &__gallery-image {
-        width: 25%; 
+        width: 33.333%; 
         float: left;
     }
 

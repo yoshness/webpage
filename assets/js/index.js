@@ -1,16 +1,14 @@
 $(document).ready(function() {
     var gallery     = $('#gallery'),
         pics        = gallery.find('.slider__gallery-image'),
-        first_pic   = pics.filter(':first'),
-        last_pic    = pics.filter(':last'),
         curr_index  = 1,
-        pic_width = 25; // width of .slider__gallery-image
+        pic_width   = 33.333; // width of .slider__gallery-image
 
     // initialize 1st pager as active
     $('#pager-' + curr_index).attr('src', 'assets/images/hover-pager.png');
       
     // clone last pic and append before 1st pic
-    first_pic.before(last_pic.clone(true));  
+    // first_pic.before(last_pic.clone(true));  
       
     $('.slider__btn-trigger').on('click', function() {
 
@@ -28,30 +26,25 @@ $(document).ready(function() {
 
             switch(btn_id) {
                 case 'previous':
-                    multiplier = -4;
+                    multiplier = -3;
                     curr_index -= 1;
                     break;
                 case 'next':
-                    multiplier = 4;
+                    multiplier = 3;
                     curr_index += 1;
                     break;  
                 case 'pager-2':
-                    multiplier = 8;
+                    multiplier = (curr_index == 3) ? -3 : 3;
                     curr_index = 2;
                     break;  
                 case 'pager-3':
-                    multiplier = 12;
+                    multiplier = (curr_index == 1) ? 6 : 3;
                     curr_index = 3;
                     break;
-                default:
-                    multiplier = 4;
+                default: // pager-1
+                    multiplier = (curr_index == 2) ? -3 : -6;
                     curr_index = 1;
                     break;                  
-            }
-
-            // if pager is clicked, reset slider before moving to the chosen slide
-            if(btn.hasClass('slider__btn-pager')) {
-                gallery.css({ left: 0 });
             }
 
             gallery.animate({ left: '+=' + (-pic_width * multiplier + '%') }, function() {
