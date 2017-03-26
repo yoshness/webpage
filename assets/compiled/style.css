@@ -181,7 +181,7 @@ aside, nav, article, figure {
   .site-footer__right-text {
     float: right; }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 1600px) {
   .site-header__heading {
     font-size: 4em; }
   .slider__image-heading--main {
@@ -229,7 +229,7 @@ aside, nav, article, figure {
   .site-footer__nav {
     padding: 1em 11.5em; } }
 
-@media screen and (min-width: 1824px) {
+@media (min-width: 1824px) {
   .site-header__heading {
     font-size: 4em; }
   .slider__image-heading--main {
@@ -281,7 +281,7 @@ aside, nav, article, figure {
   .site-footer__nav {
     padding: 1em 13em; } }
 
-@media screen and (min-width: 2560px) {
+@media (min-width: 2560px) {
   .site-header__heading {
     font-size: 6em; }
   .slider__image-heading--main {

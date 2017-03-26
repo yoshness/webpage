@@ -1,9 +1,9 @@
-$dummy-banner-main-height: 300px;
-$dummy-banner-sub-height: 100px;
 $font-stack: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $hover-color: #E7B92F;
 $medium-margin-padding: 20px;
-$slider-image-width: 1400px;
+$large-screen: "(min-width : 1600px)";
+$xlarge-screen: "(min-width : 1824px)";
+$xxlarge-screen: "(min-width : 2560px)";
 
 body {
     margin: 0;

@@ -1,4 +1,4 @@
-@media screen and (min-width : 1600px) {
+@media #{$large-screen} {
     .site-header {
         &__heading {
             font-size: 4em;
@@ -83,7 +83,7 @@
     }
 }
 
-@media screen and (min-width : 1824px) {
+@media #{$xlarge-screen} {
     .site-header {
         &__heading {
             font-size: 4em;
@@ -176,7 +176,7 @@
     }
 }
 
-@media screen and (min-width : 2560px) {
+@media #{$xxlarge-screen} {
     .site-header {
         &__heading {
             font-size: 6em;
