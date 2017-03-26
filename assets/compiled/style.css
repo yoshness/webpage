@@ -21,7 +21,7 @@ aside, nav, article, figure {
   border-top: 2px solid #E7B92F; }
   .site-header__heading {
     margin: 0;
-    font-size: 3.0em;
+    font-size: 3em;
     letter-spacing: 2px; }
 
 .slider {
@@ -56,8 +56,7 @@ aside, nav, article, figure {
   .slider__btn-prev-next {
     top: 44%; }
   .slider__btn-prev-next--previous {
-    left: 10%;
-    display: none; }
+    left: 10%; }
   .slider__btn-prev-next--next {
     right: 10%; }
   .slider__btn-pager {
@@ -72,8 +71,8 @@ aside, nav, article, figure {
 .content {
   margin: 0 auto;
   max-width: 10000px;
-  padding-right: 39%;
-  padding-left: 10%; }
+  padding-left: 10%;
+  padding-right: 39%; }
   .content__articles-list {
     float: left;
     width: 100%;
@@ -181,3 +180,76 @@ aside, nav, article, figure {
       color: #E7B92F; }
   .site-footer__right-text {
     float: right; }
+
+@media screen and (min-width: 1824px) {
+  .site-header__heading {
+    font-size: 4em; }
+  .slider__image-heading--main {
+    top: 15%;
+    left: 21.5%;
+    font-size: 5.5em; }
+  .slider__image-heading--sub {
+    top: 51%;
+    left: 27%;
+    font-size: 1.5em;
+    letter-spacing: 0.1em; }
+  .slider__btn-prev-next {
+    top: 46%; }
+  .content {
+    padding-left: 11%;
+    padding-right: 37%; }
+    .content__articles-list-item:not(:first-child) {
+      margin-top: 40px; }
+    .content__article-image {
+      width: 290px;
+      height: 160px; }
+    .content__article-title {
+      font-size: 23px; }
+    .content__article-preview {
+      font-size: 1.3em;
+      line-height: 1.3em; }
+    .content__article-date {
+      font-size: 1.3em;
+      line-height: 1.5em; }
+  .sidebar {
+    width: 450px; }
+    .sidebar__dummy-banner-image {
+      width: 410px; }
+    .sidebar__recommended-heading {
+      font-size: 1.8em; }
+    .sidebar__recommended-article {
+      margin-bottom: 20px; }
+    .sidebar__recommended-article-image {
+      width: 160px;
+      height: 90px; }
+    .sidebar__recommended-article-title {
+      font-size: 1.1em;
+      line-height: 1.5em; }
+    .sidebar__recommended-article-date {
+      font-size: 1em; } }
+
+@media screen and (min-width: 2560px) {
+  .slider__image-heading--main {
+    top: 15%;
+    left: 21%;
+    font-size: 8.5em; }
+  .slider__image-heading--sub {
+    top: 50%;
+    left: 27%;
+    font-size: 2.3em;
+    letter-spacing: 0.1em; }
+  .slider__btn-prev-next {
+    top: 46%; }
+  .content {
+    padding-left: 17%;
+    padding-right: 35%; }
+    .content__articles-list-item:not(:first-child) {
+      margin-top: 20px; }
+    .content__article-title {
+      font-size: 1.9em; }
+    .content__article-preview {
+      font-size: 1.2em;
+      line-height: 1.3em; }
+    .content__article-date {
+      font-size: 1.3em;
+      line-height: 1.5em; } }
