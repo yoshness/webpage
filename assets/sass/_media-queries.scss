@@ -1,3 +1,88 @@
+@media screen and (min-width : 1600px) {
+    .site-header {
+        &__heading {
+            font-size: 4em;
+        }
+    }
+    .slider {
+        &__image-heading--main {
+            top: 15%;
+            left: 21%;
+            font-size: 4.9em;
+        }
+
+        &__image-heading--sub {
+            top: 51%;
+            left: 28%;
+            font-size: 1.3em;
+            letter-spacing: 0.1em;
+        }
+    }
+    .content {
+        padding-left: 11%;
+        padding-right: 37%;
+
+        &__articles-list-item {
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &__article-image {
+            width: 250px;
+            height: 130px;
+        }
+
+        &__article-title {
+            font-size: 22px;
+            line-height: 1em;
+        }
+
+        &__article-preview {
+            font-size: 1.1em;
+            line-height: 1.3em;
+        }
+
+        &__article-date {
+            font-size: 1.1em;
+            line-height: 1.8em;
+        }
+    }
+    .sidebar {
+        width: 380px;
+
+        &__dummy-banner-image {
+            width: 340px;
+        }
+
+        &__recommended-heading {
+            font-size: 1.8em;
+        }
+
+        &__recommended-article-image {
+            width: 150px;
+            height: 80px;
+        }
+
+        &__recommended-article-title {
+            font-size: 0.9m;
+            line-height: 1.7em;
+        }
+
+        &__recommended-article-date {
+            font-size: 1em;
+        }
+    }
+    .site-footer {
+        &__btn-pagetop {
+            margin-right: 3em;
+        }
+        &__nav {
+            padding: 1em 11.5em;
+        }
+    }
+}
+
 @media screen and (min-width : 1824px) {
     .site-header {
         &__heading {
@@ -39,6 +124,7 @@
 
         &__article-title {
             font-size: 23px;
+            line-height: 1.3em;
         }
 
         &__article-preview {
@@ -80,9 +166,22 @@
             font-size: 1em;
         }
     }
+    .site-footer {
+        &__btn-pagetop {
+            margin-right: 4.5em;
+        }
+        &__nav {
+            padding: 1em 13em;
+        }
+    }
 }
 
 @media screen and (min-width : 2560px) {
+    .site-header {
+        &__heading {
+            font-size: 6em;
+        }
+    }
     .slider {
         &__image-heading--main {
             top: 15%;
@@ -107,22 +206,31 @@
 
         &__articles-list-item {
             &:not(:first-child) {
-                margin-top: 20px;
+                margin-top: 30px;
             }
         }
 
         &__article-title {
-            font-size: 1.9em;
+            font-size: 1.8em;
+            line-height: 1.3em;
         }
 
         &__article-preview {
-            font-size: 1.2em;
+            font-size: 1.3em;
             line-height: 1.3em;
         }
 
         &__article-date {
             font-size: 1.3em;
             line-height: 1.5em;
+        }
+    }
+    .site-footer {
+        &__btn-pagetop {
+            margin-right: 23em;
+        }
+        &__nav {
+            padding: 1em 31em;
         }
     }
 }

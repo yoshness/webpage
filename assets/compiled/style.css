@@ -62,11 +62,11 @@ aside, nav, article, figure {
   .slider__btn-pager {
     top: 91%; }
   .slider__btn-pager--one {
-    left: 47%; }
+    left: 48%; }
   .slider__btn-pager--two {
-    left: 49%; }
+    left: 50%; }
   .slider__btn-pager--three {
-    left: 51%; }
+    left: 52%; }
 
 .content {
   margin: 0 auto;
@@ -181,6 +181,54 @@ aside, nav, article, figure {
   .site-footer__right-text {
     float: right; }
 
+@media screen and (min-width: 1600px) {
+  .site-header__heading {
+    font-size: 4em; }
+  .slider__image-heading--main {
+    top: 15%;
+    left: 21%;
+    font-size: 4.9em; }
+  .slider__image-heading--sub {
+    top: 51%;
+    left: 28%;
+    font-size: 1.3em;
+    letter-spacing: 0.1em; }
+  .content {
+    padding-left: 11%;
+    padding-right: 37%; }
+    .content__articles-list-item:not(:first-child) {
+      margin-top: 30px; }
+    .content__article-image {
+      width: 250px;
+      height: 130px; }
+    .content__article-title {
+      font-size: 22px;
+      line-height: 1em; }
+    .content__article-preview {
+      font-size: 1.1em;
+      line-height: 1.3em; }
+    .content__article-date {
+      font-size: 1.1em;
+      line-height: 1.8em; }
+  .sidebar {
+    width: 380px; }
+    .sidebar__dummy-banner-image {
+      width: 340px; }
+    .sidebar__recommended-heading {
+      font-size: 1.8em; }
+    .sidebar__recommended-article-image {
+      width: 150px;
+      height: 80px; }
+    .sidebar__recommended-article-title {
+      font-size: 0.9m;
+      line-height: 1.7em; }
+    .sidebar__recommended-article-date {
+      font-size: 1em; }
+  .site-footer__btn-pagetop {
+    margin-right: 3em; }
+  .site-footer__nav {
+    padding: 1em 11.5em; } }
+
 @media screen and (min-width: 1824px) {
   .site-header__heading {
     font-size: 4em; }
@@ -204,7 +252,8 @@ aside, nav, article, figure {
       width: 290px;
       height: 160px; }
     .content__article-title {
-      font-size: 23px; }
+      font-size: 23px;
+      line-height: 1.3em; }
     .content__article-preview {
       font-size: 1.3em;
       line-height: 1.3em; }
@@ -226,9 +275,15 @@ aside, nav, article, figure {
       font-size: 1.1em;
       line-height: 1.5em; }
     .sidebar__recommended-article-date {
-      font-size: 1em; } }
+      font-size: 1em; }
+  .site-footer__btn-pagetop {
+    margin-right: 4.5em; }
+  .site-footer__nav {
+    padding: 1em 13em; } }
 
 @media screen and (min-width: 2560px) {
+  .site-header__heading {
+    font-size: 6em; }
   .slider__image-heading--main {
     top: 15%;
     left: 21%;
@@ -244,12 +299,17 @@ aside, nav, article, figure {
     padding-left: 17%;
     padding-right: 35%; }
     .content__articles-list-item:not(:first-child) {
-      margin-top: 20px; }
+      margin-top: 30px; }
     .content__article-title {
-      font-size: 1.9em; }
+      font-size: 1.8em;
+      line-height: 1.3em; }
     .content__article-preview {
-      font-size: 1.2em;
+      font-size: 1.3em;
       line-height: 1.3em; }
     .content__article-date {
       font-size: 1.3em;
-      line-height: 1.5em; } }
+      line-height: 1.5em; }
+  .site-footer__btn-pagetop {
+    margin-right: 23em; }
+  .site-footer__nav {
+    padding: 1em 31em; } }
